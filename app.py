@@ -203,11 +203,11 @@ if uploaded_audio:
     c1, c2, c3 = st.columns(3)
 
     with c1:
-        st.download_button("Raw (.txt)", raw, "raw.txt")
+        st.download_button("Raw (.txt)", raw, "rawNotes.txt")
     with c2:
-        st.download_button("Accessible (.txt)", acc, "accessible.txt")
+        st.download_button("Accessible (.txt)", acc, "accessibleNotes.txt")
     with c3:
-        st.download_button("Accessible (.docx)", notes_to_docx(acc).getvalue(), "accessible.docx")
+        st.download_button("Accessible (.docx)", notes_to_docx(acc).getvalue(), "accessibleNotes.docx")
 
     st.markdown("---")
 
